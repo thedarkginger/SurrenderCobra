@@ -1,5 +1,9 @@
 @import "bootstrap";
 
+.navbar-light .navbar-brand {
+	color: #F5F5F5; 
+}
+
 .navbar-light a {
 	color: white; 
 	font-weight: bold; 
@@ -8,6 +12,23 @@
 .navbar-light a:hover {
 	text-decoration: none;
 }
+
+.wideform {
+	height: 100px;
+	width: 100%;
+	background-color: red; 
+}
+
+/* Navbar */
+
+#toptext {
+	font-size: 18px;
+	text-align: center;
+	padding-top: 1px;
+	margin-bottom: 3px;
+}
+
+
 
 
 
