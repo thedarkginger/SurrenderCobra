@@ -8,12 +8,11 @@
 
 		Sign up <%= link_to "here", "#" %>. 
 
-
 		<h2>Example Blog Post</h2>
 
-		<p id="userid">Test This is long text. I want to see how far this goes and if it will support the comment system that I am building. And I am still going, even further I guess. Here we go.</p>
+		<p id="userid">Test test This is long text. I want to see how far this goes and if it will support the comment system that I am building. And I am still going, even further I guess. Here we go.</p>
 
-		<button class="btn btn-primary" type="submit">Search</button>
+		<button class="btn btn-primary" id="whatever" type="submit"">Search</button>
 
 	</div><!-- end container -->
 </div><!-- end left column -->
@@ -22,18 +21,42 @@
 	<p>Example</p>
 </div>
 
+<div class="container">
+	<div class="row">
+		<div class="col-md-9">
+			Left column test
+		</div>
+		<div class="col-md-3">
+			<p id="output">Right column test</p>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-9">
+			Left column test 2
+		</div>
+		<div class="col-md-3">
+			<p id="output2">Right column test 2</p>
+		</div>
+	</div>
+</div>
+
 <script type="text/javascript">
 
 $(document).ready(function(){
-	var first = document.getElementById('userid');
-	var testStr = first.innerHTML; 
+	$( "#whatever" ).click(function() {
+  		var first = document.getElementById('userid');
+		var testStr = first.innerHTML; 
 
-	if(testStr.contains("test")){
-    	alert("String Found");
-		} else{
-		alert("String not found");
-		}
-});
+		if(testStr.contains("test")){
+    		$( "#output" ).replaceWith("<b>Found da string</b>");
+			} else{
+				alert("String not found");
+			}
+		});
+	});
 </script>
 
 
