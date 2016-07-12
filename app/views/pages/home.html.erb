@@ -11,14 +11,29 @@
 
 		<h2>Example Blog Post</h2>
 
-		<p>This is long text. I want to see how far this goes and if it will support the comment system that I am building. And I am still going, even further I guess. Here we go.</p>
+		<p id="userid">Test This is long text. I want to see how far this goes and if it will support the comment system that I am building. And I am still going, even further I guess. Here we go.</p>
 
-	</div>
+		<button class="btn btn-primary" type="submit">Search</button>
 
-</div><!-- end container -->
+	</div><!-- end container -->
+</div><!-- end left column -->
 
 <div class="col-md-3">
 	<p>Example</p>
 </div>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+	var first = document.getElementById('userid');
+	var testStr = first.innerHTML; 
+
+	if(testStr.contains("test")){
+    	alert("String Found");
+		} else{
+		alert("String not found");
+		}
+});
+</script>
 
 
