@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :posts
   resources :entries
   root 'pages#home'
   get "about" => "pages#about"

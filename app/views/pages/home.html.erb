@@ -21,36 +21,33 @@
 	<p>Example</p>
 </div>
 
-<div class="container">
-	<div class="row">
-		<div class="col-md-9">
-			Left column test
-		</div>
-		<div class="col-md-3">
-			<p id="output">Right column test</p>
-		</div>
-	</div>
+<div style="margin-left: 15px">
+
+	<% @posts.each do |post| %>
+		<div class="row">
+	 		<div class="col-md-9">
+		        <h2><%= post.title %></h2>
+		        By <h7><%= post.author %></h7> at <h7><%= post.published_at %></h7>
+		        <p id="paragraph"><%= post.payload %></p>
+		    </div>
+		      	
+		    <div class="col-md-3">
+		      	<p id="output">Right column 3</p>
+		    </div>
+		<% end %>
+
+         </div>
 </div>
 
-<div class="container">
-	<div class="row">
-		<div class="col-md-9">
-			Left column test 2
-		</div>
-		<div class="col-md-3">
-			<p id="output2">Right column test 2</p>
-		</div>
-	</div>
-</div>
 
 <script type="text/javascript">
 
 $(document).ready(function(){
 	$( "#whatever" ).click(function() {
-  		var first = document.getElementById('userid');
+  		var first = document.getElementById('paragraph');
 		var testStr = first.innerHTML; 
 
-		if(testStr.contains("test")){
+		if(testStr.contains("Fritz")){
     		$( "#output" ).replaceWith("<b>Found da string</b>");
 			} else{
 				alert("String not found");
