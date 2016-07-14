@@ -1,50 +1,29 @@
 <br>
 
-<div class="col-md-9">
-	<div class="container">
+		        <button class="btn btn-primary" id="whatever" type="submit"">Search</button>
 
-		<h1>Home</h1>
-		<p>Here's the first page of the site.</p>
-
-		Sign up <%= link_to "here", "#" %>. 
-
-		<h2>Example Blog Post</h2>
-
-		<p id="userid">Test test This is long text. I want to see how far this goes and if it will support the comment system that I am building. And I am still going, even further I guess. Here we go.</p>
-
-		<button class="btn btn-primary" id="whatever" type="submit"">Search</button>
-
-	</div><!-- end container -->
-</div><!-- end left column -->
-
-<div class="col-md-3">
-	<p>Example</p>
-</div>
-
-<div style="margin-left: 15px">
-
+<div class="container">
 	<% @posts.each do |post| %>
-		<div class="row">
 	 		<div class="col-md-9">
 		        <h2><%= post.title %></h2>
 		        By <h7><%= post.author %></h7> at <h7><%= post.published_at %></h7>
-		        <p id="paragraph"><%= post.payload %></p>
+		        <p id="paragraph"><%= simple_format post.payload %></p>
 		    </div>
 		      	
 		    <div class="col-md-3">
 		      	<p id="output">Right column 3</p>
 		    </div>
 		<% end %>
-
-         </div>
 </div>
+
+
 
 
 <script type="text/javascript">
 
 $(document).ready(function(){
 	$( "#whatever" ).click(function() {
-  		var first = document.getElementById('paragraph');
+  		var first = document.getElementsByTagName("P");
 		var testStr = first.innerHTML; 
 
 		if(testStr.contains("Fritz")){
