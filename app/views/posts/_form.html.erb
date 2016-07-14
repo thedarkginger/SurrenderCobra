@@ -11,35 +11,56 @@
     </div>
   <% end %>
 
+<div class="form-group">
   <div class="field">
     <%= f.label :category %><br>
-    <%= f.text_field :category %>
+    <%= f.text_field :category, class: "form-control" %>
   </div>
+  </div>
+
+  <div class="form-group">
   <div class="field">
     <%= f.label :title %><br>
-    <%= f.text_field :title %>
+    <%= f.text_field :title, class: "form-control" %>
   </div>
+  </div>
+
+  <div class="form-group">
   <div class="field">
     <%= f.label :published_at %><br>
-    <%= f.datetime_select :published_at %>
+    <%= f.datetime_select :published_at, class: "form-control" %>
   </div>
+  </div>
+
+  <div class="form-group">
   <div class="field">
     <%= f.label :user_id %><br>
-    <%= f.number_field :user_id %>
+    <%= f.number_field :user_id, class: "form-control" %>
   </div>
+  </div>
+
+  <div class="form-group">
   <div class="field">
     <%= f.label :author %><br>
-    <%= f.text_field :author %>
+    <%= f.text_field :author, class: "form-control" %>
   </div>
+  </div>
+
+  <div class="form-group">
   <div class="field">
     <%= f.label :slug %><br>
-    <%= f.text_field :slug %>
+    <%= f.text_field :slug, class: "form-control" %>
   </div>
+  </div>
+
+  <div class="form-group">
   <div class="field">
     <%= f.label :content %><br>
-    <%= f.text_area :content, :cols => "30", :rows => "15" %>
+    <%= f.text_area :content, :cols => "30", :rows => "15", class: "form-control" %>
   </div>
+  </div>
+
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit class: "btn btn-success-outline" %>
   </div>
 <% end %>
