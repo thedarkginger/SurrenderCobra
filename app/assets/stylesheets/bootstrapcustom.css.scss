@@ -4,12 +4,21 @@
 .navbar-light .navbar-brand {
 	color: #F5F5F5; 
 	font-family: 'Londrina Solid', cursive;
-	font-size: 2.4em;
+	font-size: 2.1em;
 	letter-spacing: 1.5px; 
+	border-color: #F5F5F5;
+	border-style: solid;
+	border-width: 3px;
+	padding: 5px;
+	padding-left: 13px;
+	padding-right: 13px;
+	border-radius: 12px;
+	box-shadow: .5px .5px 1px;
 }
 
 .navbar-light .navbar-brand:hover {
-	color: #dddfe6
+	color: #a3daff; 
+	border-color: #a3daff;
 
 }
 
@@ -38,6 +47,17 @@
 	color: white;
 }
 
+.navlink {
+	font-size: 2.3em;
+	letter-spacing: 1.5px;
+	font-family: 'Londrina Solid', cursive;
+	text-decoration: underline;
+	text-decoration-line: 2px;
+}
+
+.navlink:hover {
+	color: #E4491C;
+}
 
 
 
