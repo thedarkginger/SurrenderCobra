@@ -1,38 +1,35 @@
 <br>
 
-		        <button class="btn btn-primary" id="whatever" type="submit"">Search</button>
 
 <div class="container">
 	<% @posts.each do |post| %>
-	 		<div class="col-md-9">
+	 		<div class="col-md-10">
 		        <h2><%= post.title %></h2>
 		        By <h7><%= post.author %></h7> at <h7><%= post.published_at %></h7>
-		        <p id="paragraph"><%= simple_format post.payload %></p>
+		        <p id="paragraph"><%= simple_format post.content %></p>
 		    </div>
 		      	
-		    <div class="col-md-3">
-		      	<p id="output">Right column 3</p>
+		    <div class="col-md-2">
+		      	<p class="output">Right column 3</p>
 		    </div>
 		<% end %>
 </div>
 
-
-
+<button class="btn btn-primary" id="whatever" type="submit"">Search</button>
 
 <script type="text/javascript">
 
 $(document).ready(function(){
-	$( "#whatever" ).click(function() {
-  		var first = document.getElementsByTagName("P");
-		var testStr = first.innerHTML; 
-
-		if(testStr.contains("Fritz")){
-    		$( "#output" ).replaceWith("<b>Found da string</b>");
+	$("#whatever").click(function() {
+		texty = $('p').text();
+		console.log(texty)
+		if(texty.contains("Tulane")){
+			$(".output").replaceWith("New text goes here"); 
 			} else{
-				alert("String not found");
-			}
-		});
-	});
+				console.log("nothing")
+			}; 
+	}); 
+});
 </script>
 
 
