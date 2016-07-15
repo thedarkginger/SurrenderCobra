@@ -11,17 +11,17 @@
     </div>
   <% end %>
 
-<div class="form-group">
+  <div class="form-group">
   <div class="field">
-    <%= f.label :category %><br>
-    <%= f.text_field :category, class: "form-control" %>
+    <%= f.label :title %><br>
+    <%= f.text_field :title, class: "form-control" %>
   </div>
   </div>
 
   <div class="form-group">
   <div class="field">
-    <%= f.label :title %><br>
-    <%= f.text_field :title, class: "form-control" %>
+    <%= f.label :content %><br>
+    <%= f.text_area :content, :cols => "30", :rows => "15", class: "form-control" %>
   </div>
   </div>
 
@@ -34,15 +34,22 @@
 
   <div class="form-group">
   <div class="field">
-    <%= f.label :user_id %><br>
-    <%= f.number_field :user_id, class: "form-control" %>
+    <%= f.label :author %><br>
+    <%= f.text_field :author, class: "form-control" %>
   </div>
   </div>
 
   <div class="form-group">
   <div class="field">
-    <%= f.label :author %><br>
-    <%= f.text_field :author, class: "form-control" %>
+    <%= f.label :published_at %><br>
+    <%= f.datetime_select :published_at, class: "form-control" %>
+  </div>
+  </div>
+
+  <div class="form-group">
+  <div class="field">
+    <%= f.label :category %><br>
+    <%= f.text_field :category, class: "form-control" %>
   </div>
   </div>
 
@@ -55,8 +62,8 @@
 
   <div class="form-group">
   <div class="field">
-    <%= f.label :content %><br>
-    <%= f.text_area :content, :cols => "30", :rows => "15", class: "form-control" %>
+    <%= f.label :user_id %><br>
+    <%= f.number_field :user_id, class: "form-control" %>
   </div>
   </div>
 
