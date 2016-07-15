@@ -16,6 +16,20 @@
 	box-shadow: .5px .5px 1px;
 }
 
+.navbar-light .navbar-brand2 {
+	color: #F5F5F5; 
+	font-family: 'Londrina Solid', cursive;
+	font-size: 2.0em;
+	letter-spacing: 1.5px; 
+	padding-left: 13px;
+	padding-right: 13px;
+	margin-top: 8px;
+}
+
+.navbar-light .navbar-brand2:hover {
+	color: #E4491C;
+}
+
 .navbar-light .navbar-brand:hover {
 	color: #a3daff; 
 	border-color: #a3daff;
