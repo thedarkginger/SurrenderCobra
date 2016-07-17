@@ -2,14 +2,20 @@
 
 
 <div class="container">
+	<div class="col-md-10">
 
-	<% @posts.each do |post| %>
-		        <h2 id="title"><%= post.title %></h2>
-		        <!-- By <h5><%= post.author %></h5> at <h5><%= post.published_at %></h5> -->
-		        <div id="paragraph"><%= simple_format post.content %></div>
-		    
+		<% @posts.each do |post| %>
+			    <h2 id="title"><%= post.title %></h2>
+			        <!-- By <h5><%= post.author %></h5> at <h5><%= post.published_at %></h5> -->
+			    <div id="paragraph"><%= simple_format post.content %></div>
+			    
 		<% end %>
-</div> 
+	</div> 
+	<div class="col-md-2">
+
+	</div>
+
+</div>
 
 <div class="container">
 	<%= button_to "Post Here", posts_path, :class => "btn btn-primary", :method => :get %>
