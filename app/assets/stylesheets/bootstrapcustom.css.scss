@@ -178,6 +178,11 @@
     -webkit-transition:  -webkit-transform .2s ease-out, opacity .3s ease-out;
             transition:          transform .2s ease-out, opacity .3s ease-out;
 }
+
+.hex h1, .hex p {
+  margin: 0;
+}
+
 .hex h1 {
     bottom: 50%;
     padding-top:50%;
