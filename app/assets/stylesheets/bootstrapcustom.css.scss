@@ -151,9 +151,10 @@
 .hex h1, .hex p {
     width: 102%;
     left:-1%; /* prevent line on the right where background doesn't cover image */
-    padding: 5%;
+    padding: 1%;
+    color: white;
     box-sizing:border-box;
-    background-color: rgba(0, 128, 128, 0.8);
+    background-color: #31364d;
     font-weight: 300;
     -webkit-transition:  -webkit-transform .2s ease-out, opacity .3s ease-out;
             transition:          transform .2s ease-out, opacity .3s ease-out;
