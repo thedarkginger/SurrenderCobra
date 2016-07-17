@@ -96,6 +96,25 @@
 	font-size: 1.02em;
 }
 
+/* post view */ 
+
+#category {
+	border: 2px solid #0387B1;
+	background-color: #0387B1;
+	display: table-cell;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 5px;
+	color: #F5F5F5;
+	font-weight: bold;
+}
+
+#category:hover {
+	color: white;
+}
+
+
 /* hex test /*/
 
 #hexGrid {
