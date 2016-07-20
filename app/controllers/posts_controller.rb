@@ -10,6 +10,9 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
+    z = Post.find(params[:id])
+    @slug = Post.find(params[:id]).title.parameterize
+    z.update_attributes(slug: @slug)
   end
 
   # GET /posts/new
@@ -25,11 +28,9 @@ class PostsController < ApplicationController
   # POST /posts.json
   def create
     @post = Post.new(post_params)
-    @slug = Post.last.title.parameterize
 
     respond_to do |format|
       if @post.save
-        @slug
         format.html { redirect_to @post, notice: 'Post was successfully created.' }
         format.json { render :show, status: :created, location: @post }
       else
