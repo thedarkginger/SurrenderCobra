@@ -2,20 +2,18 @@
 
 
 <div class="container">
-	<div class="col-md-10">
 
-		<% @posts.each do |post| %>
-			    <h2 id="title"><%= post.title %></h2>
-			    <p id="category"><%= post.category %></p>
-			        <!-- By <h5><%= post.author %></h5> at <h5><%= post.published_at %></h5> -->
-			    <div id="paragraph"><%= markdown(post.content) %></div>
-
-			    
-		<% end %>
-	</div> 
-	<div class="col-md-2">
-
-	</div>
+	<ul id="hexGrid">
+	  <% @posts.each do |post| %>
+	  <li class="hex">
+	    <%= link_to stories_path(id: post.slug), class: "hexIn" do %>
+	       <%= image_tag("http://www.fearthewave.com/wp-content/uploads/2016/05/bevo-768x410.png", :alt => "rss feed") %>
+	       <h1><%= post.title %></h1>
+	      <p><%= post.category %></p>
+	      <% end %>
+	  </li>
+	  	<% end %>
+	</ul>
 
 </div>
 

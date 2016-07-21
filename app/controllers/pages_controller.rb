@@ -11,6 +11,6 @@ class PagesController < ApplicationController
   end
 
   def stories
-  	@posts = Post.all
+  	@posts = Post.where(slug: params[:id]).all
   end
 end
