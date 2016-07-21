@@ -3,7 +3,7 @@
 <ul id="hexGrid">
   <% @posts.each do |post| %>
   <li class="hex">
-    <%= link_to about_path(post.slug), class: "hexIn" do %>
+    <%= link_to stories_path(id: post.slug), class: "hexIn" do %>
        <%= image_tag("http://www.fearthewave.com/wp-content/uploads/2016/05/bevo-768x410.png", :alt => "rss feed") %>
        <h1><%= post.title %></h1>
       <p><%= post.category %></p>

@@ -9,4 +9,8 @@ class PagesController < ApplicationController
   def contact
   	@posts = Post.all
   end
+
+  def stories
+  	@posts = Post.all
+  end
 end

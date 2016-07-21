@@ -1,0 +1,17 @@
+<div class="container">
+	<div class="col-md-10">
+
+		<% @posts.each do |post| %>
+			    <h2 id="title"><%= post.title %></h2>
+			    <p id="category"><%= post.category %></p>
+			        <!-- By <h5><%= post.author %></h5> at <h5><%= post.published_at %></h5> -->
+			    <div id="paragraph"><%= markdown(post.content) %></div>
+
+			    
+		<% end %>
+	</div> 
+	<div class="col-md-2">
+
+	</div>
+
+</div>
