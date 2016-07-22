@@ -9,18 +9,14 @@
 			    <p id="category"><%= post.category %></p>
 			    <br>
 			        <!-- By <h5><%= post.author %></h5> at <h5><%= post.published_at %></h5> -->
-			    <div id="paragraph"><%= markdown(post.content) %></div>
-
-			    
+			    <div id="paragraph"><%= markdown(post.content) %></div>    
 		<% end %>
 	</div> 
 
 	<div class="col-md-4">
-		<div id="exampleToggle">
+		<div class="exampleToggle">
 			<p>This is my example content.</p>
-		</div>
-
-
+	</div>
 	</div>
 
 </div>
@@ -28,11 +24,23 @@
 <script>
 
 	$(document).ready(function(){
-		$( "#exampleToggle" ).hide();
+		$( ".exampleToggle" ).hide();
 
 		$("p").click(function(){
-    		$("#exampleToggle").toggle();
+    		$(".exampleToggle").toggle();
 			});
 	});
 
 </script>
+
+    <script>
+      if (typeof annotator === 'undefined') {
+        alert("Oops! it looks like you haven't built Annotator. " +
+              "Either download a tagged release from GitHub, or build the " +
+              "package by running `make`");
+      } else {
+        var app = new annotator.App();
+        app.include(annotator.ui.main);
+        app.start();
+      }
+    </script>
