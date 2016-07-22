@@ -16,6 +16,9 @@
 	</div> 
 
 	<div class="col-md-4">
+		<div id="exampleToggle">
+			<p>This is my example content.</p>
+		</div>
 
 
 	</div>
@@ -25,11 +28,11 @@
 <script>
 
 	$(document).ready(function(){
+		$( "#exampleToggle" ).hide();
 
 		$("p").click(function(){
-    		alert("The paragraph was clicked.");
+    		$("#exampleToggle").toggle();
 			});
 	});
-
 
 </script>
