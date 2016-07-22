@@ -31,6 +31,18 @@
 			      </div>
 			    </div><!-- /.modal-content -->
 	</div>
+
+	<!-- rails form test --> 
+
+	<%= form_for(@reaxes) do |f| %>
+		 <div class="form-group">
+  			<div class="field">
+    	<%= f.label :post %>
+    	<%= f.text_field :post %>
+    	</div>
+    	</div>
+    <% end %> 
+
 	</div>
 
 </div>
