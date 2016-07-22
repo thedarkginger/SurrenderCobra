@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Reaxes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Username</th>
+      <th>Post</th>
+      <th>Submission</th>
+      <th>Upvotes</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @reaxes.each do |reax| %>
+      <tr>
+        <td><%= reax.user %></td>
+        <td><%= reax.username %></td>
+        <td><%= reax.post %></td>
+        <td><%= reax.submission %></td>
+        <td><%= reax.upvotes %></td>
+        <td><%= link_to 'Show', reax %></td>
+        <td><%= link_to 'Edit', edit_reax_path(reax) %></td>
+        <td><%= link_to 'Destroy', reax, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Reax', new_reax_path %>

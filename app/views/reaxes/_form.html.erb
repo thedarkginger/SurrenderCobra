@@ -1,0 +1,37 @@
+<%= form_for(@reax) do |f| %>
+  <% if @reax.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@reax.errors.count, "error") %> prohibited this reax from being saved:</h2>
+
+      <ul>
+      <% @reax.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :user %><br>
+    <%= f.number_field :user %>
+  </div>
+  <div class="field">
+    <%= f.label :username %><br>
+    <%= f.text_field :username %>
+  </div>
+  <div class="field">
+    <%= f.label :post %><br>
+    <%= f.text_field :post %>
+  </div>
+  <div class="field">
+    <%= f.label :submission %><br>
+    <%= f.datetime_select :submission %>
+  </div>
+  <div class="field">
+    <%= f.label :upvotes %><br>
+    <%= f.number_field :upvotes %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
