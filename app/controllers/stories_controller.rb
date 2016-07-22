@@ -1,6 +1,7 @@
 class StoriesController < ApplicationController
 	def index
 		@posts = Post.where(slug: params[:id]).all
+		@comments = Cement.all
 	end
 
   	def create
