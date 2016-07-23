@@ -47,6 +47,7 @@
 		var whatever = document.getElementsByClassName("exampleToggle");
   		$("p").click(function(){
    			 $(this).append(whatever);
+   			  $("form:not(.filter) :input:visible:enabled:first").focus();
   			});
 		});
 
