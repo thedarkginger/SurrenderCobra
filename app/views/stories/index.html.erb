@@ -14,6 +14,9 @@
 	</div> 
 
 	<div class="col-md-4">
+
+	</div><!-- / column -->
+
 	<div class="exampleToggle">
 		<%= form_for :cements do |f| %>
 		  	<div class="form-group">
@@ -36,30 +39,15 @@
 <% end %>
 </div>
 
-	</div><!-- / column -->
-
 </div>
 
 <script>
 
 	$(document).ready(function(){
-		$( ".exampleToggle" ).hide();
-
-		$("p").click(function(){
-    		$(".exampleToggle").toggle();
-			});
-	});
+		var whatever = document.getElementsByClassName("exampleToggle");
+  		$("p").click(function(){
+   			 $(this).append(whatever);
+  			});
+		});
 
 </script>
-
-    <script>
-      if (typeof annotator === 'undefined') {
-        alert("Oops! it looks like you haven't built Annotator. " +
-              "Either download a tagged release from GitHub, or build the " +
-              "package by running `make`");
-      } else {
-        var app = new annotator.App();
-        app.include(annotator.ui.main);
-        app.start();
-      }
-    </script>
