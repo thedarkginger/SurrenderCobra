@@ -4,6 +4,89 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
 @import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
 
+$navbar-default-link-color: #F5F5F5;
+
+
+/* post markup */
+
+#title {
+	font-family: 'Londrina Solid', cursive;
+	font-size: 3.25em;
+	letter-spacing: 1.3px;
+
+}
+
+#paragraph p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.20em;
+}
+
+/* post view */ 
+
+#category{
+	border: 2px solid #0387B1;
+	background-color: #0387B1;
+	display: table-cell;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 5px;
+	color: #F5F5F5;
+	font-weight: bold;
+}
+
+#category:hover {
+	color: white;
+}
+
+
+p {
+	line-height: 1.65em;
+	margin-bottom: 1.20em;
+}
+
+.special {
+	margin-left: 3%;
+}
+
+p {
+  position: relative;
+}
+
+.exampleToggle {
+  position: absolute;
+  top: 0;
+  margin-left: 8%;
+  left: 100%;
+  width: 35%;
+  height: 100px;
+}
+
+.navbar-brand {
+  float: none;
+}
+.navbar-nav .nav-item {
+  float: none;
+}
+.navbar-divider,
+.navbar-nav .nav-item+.nav-item,
+.navbar-nav .nav-link + .nav-link {
+  margin-left: 0;
+}
+@media (min-width: 34em) {
+  .navbar-brand {
+    float: left;
+  }
+  .navbar-nav .nav-item {
+    float: left;
+  }
+  .navbar-divider,
+  .navbar-nav .nav-item+.nav-item,
+  .navbar-nav .nav-link + .nav-link {
+    margin-left: 1rem;
+  }
+}
+
 .navbar-light .navbar-brand {
 	color: #F5F5F5; 
 	font-family: 'Londrina Solid', cursive;
@@ -19,8 +102,7 @@
 	box-shadow: .5px .5px 1px;
 }
 
-.navbar-light .navbar-brand2 {
-	color: #F5F5F5; 
+.navbar-light .nav-link {
 	font-family: 'Londrina Solid', cursive;
 	font-size: 1.6em;
 	letter-spacing: 1.5px; 
@@ -80,60 +162,6 @@
 
 .navlink:hover {
 	color: #E4491C;
-}
-
-/* post markup */
-
-#title {
-	font-family: 'Londrina Solid', cursive;
-	font-size: 3.25em;
-	letter-spacing: 1.3px;
-
-}
-
-#paragraph p {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 1.20em;
-}
-
-/* post view */ 
-
-#category {
-	border: 2px solid #0387B1;
-	background-color: #0387B1;
-	display: table-cell;
-	padding: 5px;
-	padding-left: 10px;
-	padding-right: 10px;
-	border-radius: 5px;
-	color: #F5F5F5;
-	font-weight: bold;
-}
-
-#category:hover {
-	color: white;
-}
-
-p {
-	line-height: 1.65em;
-	margin-bottom: 1.20em;
-}
-
-.special {
-	margin-left: 3%;
-}
-
-p {
-  position: relative;
-}
-
-.exampleToggle {
-  position: absolute;
-  top: 0;
-  margin-left: 8%;
-  left: 100%;
-  width: 35%;
-  height: 100px;
 }
 
 
