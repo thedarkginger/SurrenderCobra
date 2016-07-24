@@ -157,29 +157,49 @@ p {
   position: absolute;
   top: 0;
   margin-left: 8%;
+  background-color: white;
   left: 100%;
-  width: 35%;
+  width: 20%;
   height: 100px;
+  z-index: 2;
 }
 
-.wideform {
-	height: 100px;
-	width: 100%;
-	background-color: red; 
+div .exampleToggle {
+	border: 9px solid #002b52;
+	height: 260px;
+	width: 35%;
+	padding: 10px;
+	border-radius: 14px;
 }
 
-/* Navbar */
-
-.navlink {
-	font-size: 2.3em;
-	letter-spacing: 1.5px;
-	font-family: 'Londrina Solid', cursive;
-	text-decoration: underline;
-	text-decoration-line: 2px;
+.commentbox {
+	background: #0387B1;
+	border: 3px solid black;
+	padding-left: 10px;
+	color: white;
+	margin-bottom: 4px;
+	border-radius: 10px;
+	font-family: 'Open Sans', sans-serif;
 }
 
-.navlink:hover {
-	color: #E4491C;
+.testauthor {
+	text-align: center;
 }
 
+.card-1 {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  background: #0387B1;
+  padding-left: 8px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-bottom: 7px;
+  border-radius: 5px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.card-1:hover {
+  box-shadow: 0 10px 22px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
 
