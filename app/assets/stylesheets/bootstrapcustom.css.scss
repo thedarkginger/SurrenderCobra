@@ -4,6 +4,20 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
 @import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
 
+
+#toptext {
+	font-size: 18px;
+	text-align: center;
+	padding-top: 1px;
+	margin-bottom: -6px;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	background-color: #E4491C; 
+	height: 35px; 
+	z-index: -1;
+}
+
 @media screen and (max-width: 441px) {
    .navbar-default .navbar-brand {
 	padding: 5px;
@@ -47,6 +61,8 @@
 .navbar-default {
   background-color: #002b52;
   padding: 15px;
+  margin-top: -1 !important;
+  border-color: #002b52 !important; 
 }
 
 .navbar-default .navbar-brand:hover {
@@ -153,16 +169,6 @@ p {
 }
 
 /* Navbar */
-
-#toptext {
-	font-size: 18px;
-	text-align: center;
-	padding-top: 1px;
-	margin-bottom: 3px;
-	color: white;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: bold;
-}
 
 .navlink {
 	font-size: 2.3em;
