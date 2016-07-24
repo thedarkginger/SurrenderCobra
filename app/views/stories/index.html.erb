@@ -1,5 +1,5 @@
 <div class="special">
-	<div class="col-md-8">
+	<div class="col-sm-8">
 		<br>
 
 		<% @posts.each do |post| %>
@@ -9,7 +9,7 @@
 		<% end %>
 	</div> 
 
-	<div class="col-md-4">
+	<div class="col-sm-4">
 		<% @comments.each do |comment| %>
 			<div class="card-1">
 			<h5 class="testcomment"><%= comment.post %></h5> <h5 class="testauthor">- <%= comment.username %></h5>
