@@ -12,7 +12,7 @@
 	<div class="col-sm-4">
 		<% @comments.each do |comment| %>
 			<div class="card-1">
-			<h5 class="testcomment"><%= comment.post %></h5> <h5 class="testauthor">- <%= comment.username %> [<%= comment.created_at.to_formatted_s(:long) %>]</h5>
+			<h5 class="testcomment"><%= comment.post %></h5> <h5 class="testauthor">- <%= comment.username %> (<%= comment.created_at.to_formatted_s(:long) %></h5>
 			</div>
 		<% end %> 
 
@@ -49,7 +49,7 @@
 		var whatever = document.getElementsByClassName("exampleToggle");
   		$("p").click(function(){
   			 $('.exampleToggle').show();
-   			 $(this).prepend(whatever)
+   			 $(this).prepend(whatever);
    			  $("form:not(.filter) :input:visible:enabled:first").focus();
   			});
 		});

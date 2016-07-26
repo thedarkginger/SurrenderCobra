@@ -14,7 +14,7 @@ module ApplicationHelper
 	      disable_indented_code_blocks: true
 	    }
 
-	    renderer = Redcarpet::Render::HTML.new(options)
+	    renderer = Redcarpet::Render::HTML.new(with_toc_data: true)
 	    markdown = Redcarpet::Markdown.new(renderer, extensions)
 
 	    markdown.render(text).html_safe

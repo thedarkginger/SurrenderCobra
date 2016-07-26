@@ -223,8 +223,14 @@ div .exampleToggle:hover {
 }
 
 
+.testcomment {
+	text-align: left;
+	font-size: 1.0em;
+}
+
 .testauthor {
 	text-align: center;
+	font-size: 0.8em;
 }
 
 .card-1 {
@@ -243,4 +249,5 @@ div .exampleToggle:hover {
 .card-1:hover {
   box-shadow: 0 10px 22px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
 }
+
 
