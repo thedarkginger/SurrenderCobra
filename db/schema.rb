@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160722063125) do
+ActiveRecord::Schema.define(version: 20160727042629) do
 
   create_table "cements", force: :cascade do |t|
     t.string   "username"
@@ -45,6 +45,8 @@ ActiveRecord::Schema.define(version: 20160722063125) do
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
     t.text     "content"
+    t.string   "subdomain"
+    t.string   "headerimg"
   end
 
   create_table "reaxes", force: :cascade do |t|
