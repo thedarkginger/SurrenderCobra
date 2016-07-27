@@ -150,6 +150,7 @@ p {
 .special {
 	margin-left: 3%;
 	margin-right: 1%;
+	overflow: hidden;
 }
 
 p {
@@ -250,25 +251,26 @@ div .exampleToggle:hover {
   box-shadow: 0 10px 22px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
 }
 
-* {
-  margin: 0;
-}
-html, body {
-  height: 100%;
-}
-.page-wrap {
-  min-height: 100%;
-  /* equal to footer height */
-  margin-bottom: -160px; 
-}
-.page-wrap:after {
-  content: "";
-  display: block;
-}
-.site-footer, .page-wrap:after {
-	margin-top: 10px;
-	height: 160px; 
-}
-.site-footer {
-  background: #002b52;
-}
+    * {
+      margin: 0;
+    }
+    html, body {
+      height: 100%;
+    }
+    .page-wrap {
+      min-height: 100%;
+      /* equal to footer height */
+      margin-bottom: -160px; 
+    }
+    .page-wrap:after {
+      content: "";
+      display: block;
+    }
+    .site-footer, .page-wrap:after {
+        margin-top: 10px;
+        height: 160px; 
+    }
+    .site-footer {
+      background: #004182; 
+      box-shadow: 0 10px 22px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
