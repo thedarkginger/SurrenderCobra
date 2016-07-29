@@ -2,7 +2,7 @@ class FearthewaveController < ActionController::Base
 	 layout "ftwlayouts"
 
 	def index
-	 @posts = Post.order('created_at DESC').all
+	 @posts = Post.order('updated_at DESC').all
 	end
 
 	def ftwstories
