@@ -4,10 +4,11 @@ Rails.application.routes.draw do
   resources :stories
 
   root :to => "pages#home", :constraints => { :domain => "surrendercobra.com" }, as: nil
-  root :to => "pages#contact"
+  root :to => "fearthewave#index"
 
   get "about" => "pages#about"
   get "contact" => "pages#contact"
+  get "fearthewave" => "fearthewave#index"
 
 
   # The priority is based upon order of creation: first created -> highest priority.
