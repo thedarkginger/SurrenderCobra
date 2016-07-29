@@ -2,15 +2,16 @@ Rails.application.routes.draw do
   resources :posts
   resources :cements
   resources :stories
+  resources :fearthewaves
+
 
   root :to => "pages#home", :constraints => { :domain => "surrendercobra.com" }, as: nil
-  root :to => "fearthewave#index"
+  root :to => "fearthewaves#index"
 
   get "about" => "pages#about"
   get "contact" => "pages#contact"
-  get "fearthewave" => "fearthewave#index"
-  get "ftwstories" => "fearthewave#ftwstories"
-
+  get "blog" => "fearthewaves#blog"
+  
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

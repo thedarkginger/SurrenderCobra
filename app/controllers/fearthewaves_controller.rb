@@ -1,17 +1,17 @@
-class FearthewaveController < ActionController::Base
-	 layout "ftwlayouts"
+class FearthewavesController < ActionController::Base
+	layout "ftwlayouts"
 
 	def index
 	 @posts = Post.order('updated_at DESC').all
 	end
 
-	def ftwstories
+	def blog
 		@posts = Post.where(slug: params[:id]).all
 		@comments = Cement.all
 	end
 
 	def create
-  		@cements= Cement.new(story_params)
+  		@cements= Cement.new(params[:id])
   		@cements.save
   		redirect_to(:back)
 	end
@@ -19,7 +19,9 @@ class FearthewaveController < ActionController::Base
 	private
 
   	def story_params
-    	params.require(:cements).permit(:username, :post)
+    	params.require(:cements).permit(:username, :post, :slug)
   	end
 
 end
+
+
