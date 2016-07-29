@@ -3,6 +3,7 @@
 		<% @posts.each do |post| %>
 			    <h2 id="title"><%= post.title %></h2>
 			    <p id="category"><%= post.category %></p>
+			     <hr class="star-light">
 			    <div id="paragraph"><%= markdown(post.content) %></div>    
 		<% end %>
 	</div> 

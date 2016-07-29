@@ -334,14 +334,14 @@ div .exampleToggle:hover {
     .page-wrap2 {
       min-height: 100%;
       /* equal to footer height */
-      margin-bottom: -130px; 
+      margin-bottom: -110px; 
     }
     .page-wrap2:after {
       content: "";
       display: block;
     }
     .site-footer2, .page-wrap:after {
-        height: 130px; 
+        height: 110px; 
     }
     .site-footer2 {
       background: #005502;
