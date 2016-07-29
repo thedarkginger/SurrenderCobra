@@ -18,6 +18,37 @@
 	z-index: -1;
 }
 
+#toptext2 {
+	font-size: 18px;
+	text-align: center;
+	padding-top: 1px;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	background-color: #4ab4f4;
+	height: 10px; 
+	z-index: -1;
+}
+
+#toptext3 {
+    background-image:
+      -moz-linear-gradient(45deg, white 25%, transparent 25%), 
+      -moz-linear-gradient(-45deg, white 25%, transparent 25%),
+      -moz-linear-gradient(45deg, transparent 75%, white 75%),
+      -moz-linear-gradient(-45deg, transparent 75%, white 75%);
+    background-image:
+      -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, white), color-stop(.25, transparent)), 
+      -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, white), color-stop(.25, transparent)),
+      -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.75, transparent), color-stop(.75, white)),
+      -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.75, transparent), color-stop(.75, white));
+
+    -moz-background-size:75px 75px;
+    background-size:75px 75px;
+    -webkit-background-size:75px 76px; /* override value for shitty webkit */
+    
+    background-position:0 0, 37.5px 0, 37.5px -37.5px, 0px 37.5px;
+}
+
 @media screen and (max-width: 441px) {
    .navbar-default .navbar-brand {
 	padding: 5px;
@@ -45,24 +76,6 @@
 	font-family: 'Londrina Solid', cursive;
 	height: 70px;
 	font-size: 3.1em;
-	letter-spacing: 1.5px; 
-	border-color: #F5F5F5;
-	border-style: solid;
-	border-width: 3px;
-	padding-left: 13px;
-	padding-right: 13px;
-	padding-top: 20px;
-	padding-bottom: 12px;
-	border-radius: 12px;
-	box-shadow: .5px .5px 1px;
-	}
-
-	.navbar-default .navbar-brand.ftw {
-	padding: 5px;
-	color: black; 
-	font-family: 'Londrina Solid', cursive;
-	height: 70px;
-	font-size: 6.1em;
 	letter-spacing: 1.5px; 
 	border-color: #F5F5F5;
 	border-style: solid;
@@ -118,6 +131,30 @@
 }
 
 .navbar-brand2 a:hover {
+	text-decoration: none;
+}
+
+.navbar-brand3 a {
+	color: #C6E7CE; 
+	font-weight: bold; 
+}
+
+.navbar-brand3 {
+	font-family: 'Londrina Solid', cursive;
+	color: white !important;
+	margin-top: 8px;
+	font-size: 1.8em;
+	letter-spacing: 1.5px; 
+	padding-left: 13px;
+	padding-right: 13px;
+	border: white 2px solid;
+	border-radius: 12px;
+	margin-right: 10px;
+}
+
+.navbar-brand3:hover {
+	color: #C6E7CE !important;
+	border-color: #C6E7CE; 
 	text-decoration: none;
 }
 
@@ -291,4 +328,27 @@ div .exampleToggle:hover {
     .site-footer {
       background: #004182; 
       box-shadow: 0 10px 22px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+
+    .page-wrap2 {
+      min-height: 100%;
+      /* equal to footer height */
+      margin-bottom: -130px; 
+    }
+    .page-wrap2:after {
+      content: "";
+      display: block;
+    }
+    .site-footer2, .page-wrap:after {
+        height: 110px; 
+    }
+    .site-footer2 {
+      background: #005502;
+      box-shadow: 0 10px 22px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+
+    .ftwdivide {
+    	height: 70px;
+    	background-color: #003366;
+    	margin-top: 10px;
     }

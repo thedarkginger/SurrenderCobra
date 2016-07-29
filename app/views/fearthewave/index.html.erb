@@ -1,4 +1,15 @@
+<div class="container">
 
-<h1>Test Page</h1>
+	<ul id="hexGrid">
+	  <% @posts.each do |post| %>
+	  <li class="hex">
+	    <%= link_to ftwstories_path(id: post.slug), class: "hexIn" do %>
+	       <%= image_tag(post.author, :alt => "rss feed") %>
+	       <h1><%= post.title %></h1>
+	      <p><%= post.category %></p>
+	      <% end %>
+	  </li>
+	  	<% end %>
+	</ul>
 
-<p>Here's some more content get psyched</p>
+</div>
