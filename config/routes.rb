@@ -3,10 +3,9 @@ Rails.application.routes.draw do
   resources :cements
   resources :stories
 
-  root :to => "pages#home", :constraints => { :domain => "yourdomain.com" }
+  root :to => "pages#home", :constraints => { :domain => "dry-stream-90763.herokuapp.com" }, as: nil
   root :to => "pages#contact"
 
-  root 'pages#home'
   get "about" => "pages#about"
   get "contact" => "pages#contact"
 
