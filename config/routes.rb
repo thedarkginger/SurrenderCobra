@@ -10,8 +10,8 @@ Rails.application.routes.draw do
 
   get "about" => "pages#about"
   get "contact" => "pages#contact"
-  get "ftw" => "fearthewaves#index"
-  get "fearthewave" => "fearthewaves#fearthewave"
+  get "fearthewave" => "fearthewaves#index"
+  get "fearthewave/blog" => "fearthewaves#fearthewave"
   
 
   # The priority is based upon order of creation: first created -> highest priority.
