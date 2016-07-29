@@ -5,7 +5,7 @@ class StoriesController < ApplicationController
 	end
 
   	def create
-  		@cements= Cement.new(ftwstory_params)
+  		@cements= Cement.new(story_params)
   		@cements.save
   		redirect_to(:back)
 	end
