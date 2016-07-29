@@ -316,6 +316,7 @@ div .exampleToggle:hover {
       min-height: 100%;
       /* equal to footer height */
       margin-bottom: -160px; 
+      overflow: hidden;
     }
     .page-wrap:after {
       content: "";
