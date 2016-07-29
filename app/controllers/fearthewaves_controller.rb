@@ -3,25 +3,15 @@ class FearthewavesController < ActionController::Base
 
 	def index
 	 @posts = Post.order('updated_at DESC').all
+	 @comments = Cement.all
 	end
 
-	def blog
-		@posts = Post.where(slug: params[:id]).all
-		@comments = Cement.all
+	def fearthewave
+		@posts = Post.where(slug: params[:id])
+		@comments = Cement.where(slug: params[:id])
 	end
-
-	def create
-  		@cements= Cement.new(params[:id])
-  		@cements.save
-  		redirect_to(:back)
-	end
-
-	private
-
-  	def story_params
-    	params.require(:cements).permit(:username, :post, :slug)
-  	end
 
 end
+
 
 
