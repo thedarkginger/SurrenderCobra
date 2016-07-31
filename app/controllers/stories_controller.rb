@@ -13,6 +13,6 @@ class StoriesController < ApplicationController
 	private
 
   	def story_params
-    	params.require(:cements).permit(:username, :post)
+    	params.require(:cements).permit(:username, :post, :slug)
   	end
 end

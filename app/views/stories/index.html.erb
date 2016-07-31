@@ -32,7 +32,7 @@
 		  		</div>
 		  	</div>
 
-		  	<%= f.hidden_field :upvotes, :id => "hiddenRating"%>
+		  	<%= f.hidden_field :slug, :id => "hiddenPicker"%>
 
  	<div class="actions">
     	<%= f.submit "Save", class: "btn btn-success-outline" %>
@@ -47,11 +47,18 @@
 	$(document).ready(function(){
 		$('.exampleToggle').hide();
 		var whatever = document.getElementsByClassName("exampleToggle");
-  		$("p").click(function(){
+  		$("h2").click(function(){
   			 $('.exampleToggle').show();
    			 $(this).prepend(whatever);
    			  $("form:not(.filter) :input:visible:enabled:first").focus();
   			});
 		});
+
+		$(function () {
+  		$('h2').on('click', function (){
+   		var id = $(this).attr('id');
+    	$('input#hiddenPicker').val(id);
+  		});
+	});
 
 </script>
