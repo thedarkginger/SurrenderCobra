@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :stories
   resources :fearthewaves
 
-  root :to => "fearthewaves#index", constraints: { subdomain: 'fearthewave' }
+  root :to => "fearthewaves#index", constraints: { subdomain: 'fearthewave' }, as: nil
   root :to => "pages#home"
 
   # root :to => "pages#home"
