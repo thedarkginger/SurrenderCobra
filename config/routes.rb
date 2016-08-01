@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
 
   root :to => "pages#home"
-  root :to => "fearthewaves#index", :constraints => { :domain => "ftw.surrendercobra.com" }, as: nil
+  root :to => "fearthewaves#index", constraints: { subdomain: 'fearthewave' }
 
   # root :to => "pages#home"
 
