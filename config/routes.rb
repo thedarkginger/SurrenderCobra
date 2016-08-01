@@ -5,10 +5,12 @@ Rails.application.routes.draw do
   resources :fearthewaves
 
 
-  root :to => "fearthewaves#index", :constraints => { :domain => "fearthewave.surrendercobra.com" }, as: nil
-  root :to => "pages#home"
+  match '/' => 'fearthewaves#index', :constraints => { :subdomain => 'www.fearthewave' }  
+  root :to => "fearthewaves#index"
 
-  # root :to => "pages#home"
+
+
+  #root :to => "pages#home"
 
   get "about" => "pages#about"
   get "contact" => "pages#contact"
