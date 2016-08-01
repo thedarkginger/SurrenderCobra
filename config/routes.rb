@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :fearthewaves
 
 
-  match '/' => 'fearthewaves#index', :constraints => { :subdomain => 'www.fearthewave' }  
+  get '/' => 'fearthewaves#index', :constraints => { :subdomain => 'www.fearthewave' }  
   root :to => "fearthewaves#index"
 
 
