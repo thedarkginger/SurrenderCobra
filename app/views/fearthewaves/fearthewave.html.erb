@@ -2,8 +2,8 @@
 	<div class="col-sm-8">
 		<% @posts.each do |post| %>
 			    <h2 id="title"><%= post.title %></h2>
-			   	<hr class="star-light">
 			    <p id="category"><%= post.category %></p>
+			    <hr class="star-light">
 			    <div id="paragraph"><%= markdown(post.content) %></div>    
 		<% end %>
 	</div> 
@@ -11,26 +11,55 @@
 	<div class="col-sm-4">
 		<% @comments.each do |comment| %>
 			<div class="card-1">
-			<h5 class="testcomment"><%= comment.post %></h5> <h5 class="testauthor">- <%= comment.username %> (<%= comment.created_at.to_formatted_s(:long) %>)</h5>
+			<h5 class="testcomment"><%= comment.post %></h5> <h5 class="testauthor">- <%= comment.username %> (<%= comment.created_at.to_formatted_s(:long) %></h5>
 			</div>
 		<% end %> 
 
 	</div><!-- / column -->
 
+	<div class="exampleToggle">
+		<%= form_for :cements, url: cements_path do |f| %>
+		    <div class="form-group">
+  				<div class="field">
+		    		<%= f.label :post %><br>
+		    		<%= f.text_area :post, class: "form-control" %>
+		  		</div>
+		  	</div>
 
+		  	<h5 id="username">Username</h5>
+		  	<div class="form-group">
+  				<div class="field">
+		    		<%= f.text_field :username, class: "form-control" %>
+		  		</div>
+		  	</div>
+
+		  	<%= f.hidden_field :slug, :id => "hiddenPicker"%>
+
+ 	<div class="actions">
+    	<%= f.submit "Save", class: "btn btn-success-outline" %>
+  	</div>
+<% end %>
 </div>
 
+</div>
 
 <script>
 
 	$(document).ready(function(){
 		$('.exampleToggle').hide();
 		var whatever = document.getElementsByClassName("exampleToggle");
-  		$("p").click(function(){
+  		$("h3").click(function(){
   			 $('.exampleToggle').show();
    			 $(this).prepend(whatever);
    			  $("form:not(.filter) :input:visible:enabled:first").focus();
   			});
 		});
+
+		$(function () {
+  		$('h3').on('click', function (){
+   		var id = $(this).attr('id');
+    	$('input#hiddenPicker').val(id);
+  		});
+	});
 
 </script>
