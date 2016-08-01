@@ -4,9 +4,8 @@ Rails.application.routes.draw do
   resources :stories
   resources :fearthewaves
 
-
-  root :to => "pages#home"
   root :to => "fearthewaves#index", constraints: { subdomain: 'fearthewave' }
+  root :to => "pages#home"
 
   # root :to => "pages#home"
 
