@@ -8,7 +8,7 @@ class FearthewavesController < ActionController::Base
 
 	def fearthewave
 		@posts = Post.where(slug: params[:id]).all
-		@comments = Cement.all
+		@comments = Cement.where(slug: params[:id]).all
 	end 
 
   	def create
