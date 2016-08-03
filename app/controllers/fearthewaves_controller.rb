@@ -20,9 +20,8 @@ class FearthewavesController < ActionController::Base
 	private
 
   	def story_params
-    	params.require(:cements).permit(:username, :post, :slug)
+    	params.require(:cements).permit(:username, :post, :slug, :location)
   	end
-
 
 end
 

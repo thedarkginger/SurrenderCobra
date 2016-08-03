@@ -11,7 +11,7 @@
 	<div class="col-sm-4">
 		<% @comments.each do |comment| %>
 			<div class="card-1">
-			<h5 class="testcomment"><%= comment.post %></h5> <h5 class="testauthor">- <%= comment.username %> (<%= comment.created_at.to_formatted_s(:long) %></h5>
+			<h5 class="testcomment"><%= comment.post %></h5> <h5 class="testauthor">- <%= comment.username %> (<%= comment.created_at.to_formatted_s(:long) %>)</h5>
 			</div>
 		<% end %> 
 
@@ -33,7 +33,8 @@
 		  		</div>
 		  	</div>
 
-		  	<%= f.hidden_field :slug, :id => "hiddenPicker"%>
+		  	<%= f.hidden_field :location, :id => "hiddenPicker"%>
+		  	<%= f.hidden_field :slug, :value => params[:id] %> 
 
  	<div class="actions">
     	<%= f.submit "Save", class: "btn btn-success-outline" %>
