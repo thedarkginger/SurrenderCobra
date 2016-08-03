@@ -268,23 +268,30 @@ div .exampleToggle:hover {
 
 /* example toggle sizes */ 
 
+@media screen and (max-width: 769px) {
+	div .exampleToggle {
+		display: none !important;
+	}
+}
+
 @media screen and (min-width: 770px) {
 	div .exampleToggle {
-		width: 47%;
-		margin-left: 6% !important;
+		width: 44.5%;
+		margin-left: .9% !important;
 	}
 }
 
 @media screen and (min-width: 900px) {
 	div .exampleToggle {
-		width: 48%;
-		margin-left: 5% !important;
+		width: 45%;
+		margin-left: 1.0% !important;
 	}
 }
 
 @media screen and (min-width: 1050px) {
 	div .exampleToggle {
-		width: 48.5%;
+		width: 45.8%;
+		margin-left: 1.1% !important;
 	}
 }
 
