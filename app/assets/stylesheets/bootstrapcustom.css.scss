@@ -219,12 +219,6 @@
 
 }
 
-
-p {
-	line-height: 1.65em;
-	margin-bottom: 1.20em;
-}
-
 .special {
 	margin-left: 3%;
 	margin-right: 1%;
@@ -233,6 +227,20 @@ p {
 
 p {
   position: relative;
+  line-height: 1.65em;
+margin-bottom: 1.20em;
+}
+
+h3 {
+	background-color: rgba(200,230,201, 0.8);
+	padding: 6px;
+	display: inline-block;
+}
+
+h3:hover {
+	background-color: rgba(129,199,132, 0.8);
+	padding: 6px;
+	display: inline-block;
 }
 
 .exampleToggle {
