@@ -2,7 +2,7 @@ class FearthewavesController < ActionController::Base
 	layout "ftwlayouts"
 
 	def index
-		@posts = Post.order(published_at: :desc).last(5)
+		@posts = Post.order('created_at DESC').last(5)
 		@comments = Cement.where(slug: params[:id]).all
 	end
 
