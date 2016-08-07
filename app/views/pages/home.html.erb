@@ -6,7 +6,7 @@
 	  <% @posts.each do |post| %>
 	  <li class="hex">
 	    <%= link_to stories_path(id: post.slug), class: "hexIn" do %>
-	       <%= image_tag(post.author, :alt => "rss feed") %>
+	       <%= image_tag(post.headerimg, :alt => "rss feed") %>
 	       <h1><%= post.title %></h1>
 	      <p><%= post.category %></p>
 	      <% end %>
