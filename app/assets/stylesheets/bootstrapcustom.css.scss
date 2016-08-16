@@ -228,6 +228,26 @@
 		width: 100%;
 	}
 
+	/* set comment look */ 
+
+	.card-1 {
+		  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+		  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+		  background: #0387B1;
+		  padding-left: 8px;
+		  padding-top: 2px;
+		  padding-bottom: 2px;
+		  margin-top: 10px;
+		  margin-bottom: 7px;
+		  border-radius: 5px;
+		  color: white;
+		  font-family: 'Open Sans', sans-serif;
+		}
+
+		.card-1:hover {
+		  box-shadow: 0 10px 22px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+		}
+
 }
 
 @media screen and (min-width: 442px) {
@@ -237,6 +257,28 @@
 		width: 100%;
 	}
 
+	.card-1 {
+		  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+		  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+		  background: #0387B1;
+		  margin-top: 120px;
+		  padding-left: 8px;
+		  padding-top: 2px;
+		  padding-bottom: 2px;
+		  margin-bottom: 7px;
+		  border-radius: 5px;
+		  color: white;
+		  font-family: 'Open Sans', sans-serif;
+		}
+
+		.card-1:hover {
+		  box-shadow: 0 10px 22px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+		}
+
+
+		.comment_starter {
+    		margin-top: 80%;
+    	}
 }
 
 .special {
@@ -260,12 +302,14 @@ h3 {
 	background-color: rgba(200,230,201, 0.8);
 	padding: 6px;
 	display: inline-block;
+	margin-top: 10px;
 }
 
 h3:hover {
 	background-color: rgba(129,199,132, 0.8);
 	padding: 6px;
 	display: inline-block;
+	margin-top: 10px;
 }
 
 .exampleToggle {
@@ -353,23 +397,6 @@ div .exampleToggle:hover {
 	font-size: 0.8em;
 }
 
-.card-1 {
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-  background: #0387B1;
-  padding-left: 8px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  margin-bottom: 7px;
-  border-radius: 5px;
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.card-1:hover {
-  box-shadow: 0 10px 22px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
-}
-
     * {
       margin: 0;
     }
@@ -419,3 +446,19 @@ div .exampleToggle:hover {
     	box-shadow: 8px 11px 22px rgba(0,0,0,0.25), 0 11px 15px rgba(0,0,0,0.22);
     }
 
+    #paragraph a {
+    	color: #0D47A1;
+    	font-weight: bold;
+    	border-bottom: solid 2.1px #0D47A1;
+      	display: inline;
+      	padding-bottom: .6px;
+
+    }
+
+    #paragraph a:hover {
+    	color: #1565C0;
+    	text-decoration: none;
+    	border-bottom: solid 2.1px #1565C0;
+      	display: inline;
+      	padding-bottom: .6px;
+    }
