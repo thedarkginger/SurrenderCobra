@@ -37,6 +37,7 @@
 
 		  	<%= f.hidden_field :location, :id => "hiddenPicker"%>
 		  	<%= f.hidden_field :slug, :value => params[:id] %> 
+		  	<%= f.hidden_field :id, :value => Cement.maximum(:id) + 1 %>
 
  	<div class="actions">
     	<%= f.submit "Save", class: "btn btn-success-outline" %>
