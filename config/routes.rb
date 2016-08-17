@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   resources :fearthewaves
 
 constraints DomainConstraint.new('fearthewave.com') do
-  root :to => 'fearthewaves#index'
+  root :to => 'fearthewaves#index', as: 'ftw'
 end
 
 root :to => 'pages#home'
