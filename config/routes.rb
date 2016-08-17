@@ -4,9 +4,11 @@ Rails.application.routes.draw do
   resources :stories
   resources :fearthewaves
 
+constraints DomainConstraint.new('fearthewave.com') do
+  root :to => 'fearthewaves#index'
+end
 
-  root :to => 'fearthewaves#index', :constraints => DomainConstraint.new('fearthewave.com')
-  root :to => "pages#home"
+root :to => 'pages#home'
 
 
 
