@@ -1,3 +1,4 @@
+require 'domain_constraint'
 Rails.application.routes.draw do
   resources :posts
   resources :cements
