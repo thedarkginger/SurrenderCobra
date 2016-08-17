@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :fearthewaves
 
 
-  get '/' => 'fearthewaves#index', :constraints => { :subdomain => 'www.fearthewave' }  
+  root :to => 'fearthewaves#index', :constraints => DomainConstraint.new('fearthewave.com')
   root :to => "pages#home"
 
 
