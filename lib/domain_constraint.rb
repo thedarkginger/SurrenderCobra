@@ -1,6 +1,6 @@
 class DomainConstraint
   def initialize(domain)
-    @domains = [domain].flatten
+    @domains = domain
   end
 
   def matches?(request)
