@@ -4,6 +4,7 @@ class FearthewavesController < ActionController::Base
 	def index
 		@posts = Post.order('created_at DESC').first(5)
 		@comments = Cement.where(slug: params[:id]).all
+		@bars = Post.order('created_at DESC').first(1)
 	end
 
 	def fearthewave

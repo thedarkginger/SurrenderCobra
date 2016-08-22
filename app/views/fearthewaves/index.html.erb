@@ -11,5 +11,20 @@
 	  </li>
 	  	<% end %>
 	</ul>
+</div>
+
+<br>
+
+<!-- no container --> 
+
+<div class="mainbar">
+	<div class="col-sm-4">
+		 <% @bars.each do |bar| %>
+		 	  <h1><%= bar.title %></h1>
+		      <p><%= bar.category %> - <%= bar.author %></p>
+		<% end %>
+	</div>
 
 </div>
+
+<br>
