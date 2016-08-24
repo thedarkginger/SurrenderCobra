@@ -482,9 +482,9 @@ div .exampleToggle:hover {
     	color: #0D47A1;
     }
 
-
-    .divider {
-    	width: 50%;
-    	margin-left: 25%;
-    	height: 5px;
+    hr {
+    	background-color: #0191C8 !important;
+    	color: #0191C8 !important;
+    	border: solid 2px #0191C8 !important;
+    	height: 5px !important;
     }
