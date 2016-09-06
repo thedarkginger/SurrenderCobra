@@ -17,6 +17,7 @@ root :to => 'pages#home'
   #root :to => "pages#home"
 
   get "about" => "pages#about"
+  get "admin" => "pages#admin"
   get "contact" => "pages#contact"
   get "fearthewave" => "fearthewaves#index"
   get "fearthewaveblog" => "fearthewaves#fearthewave"
