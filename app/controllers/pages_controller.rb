@@ -9,4 +9,8 @@ class PagesController < ApplicationController
   def contact
   	@posts = Post.all
   end
+
+  def admin
+  	@posts = Post.where(subdomain: current_user.website)
+  end
 end
