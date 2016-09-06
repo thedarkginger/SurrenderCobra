@@ -1,6 +1,6 @@
 require 'domain_constraint'
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, :controllers => { registrations: 'registrations' }
   resources :posts
   resources :cements
   resources :stories
