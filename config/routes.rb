@@ -1,5 +1,6 @@
 require 'domain_constraint'
 Rails.application.routes.draw do
+  devise_for :users
   resources :posts
   resources :cements
   resources :stories
