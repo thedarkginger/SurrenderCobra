@@ -22,6 +22,7 @@ root :to => 'pages#home'
   get "fearthewave" => "fearthewaves#index"
   get "fearthewaveblog" => "fearthewaves#fearthewave"
   get "aboutftw" => "fearthewaves#aboutftw"
+  get "test" => "fearthewaves#test"
   
 
   # The priority is based upon order of creation: first created -> highest priority.
