@@ -12,7 +12,7 @@ class PagesController < ApplicationController
 
   def admin
     if user_signed_in?
-  	 @posts = Post.where(subdomain: current_user.website)
+  	 @posts = Post.where(subdomain: current_user.website).limit(10)
     end
   end
 end
