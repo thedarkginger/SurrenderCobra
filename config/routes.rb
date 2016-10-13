@@ -10,11 +10,7 @@ constraints DomainConstraint.new('www.fearthewave.com') do
   root :to => 'fearthewaves#index', as: 'ftw'
 end
 
-root :to => 'pages#home'
-
-
-
-  #root :to => "pages#home"
+root :to => 'pages#admin'
 
   get "about" => "pages#about"
   get "admin" => "pages#admin"
