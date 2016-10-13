@@ -1,5 +1,8 @@
 <div class="container">
 
+
+<% if user_signed_in? %>
+
 <%= content_tag 'h1', current_user.website + ' Admin' %> 
 
 	 <% if user_signed_in? %>
@@ -39,3 +42,9 @@
   <% end %>  
 
 </div>
+
+  <% else %>
+
+  <h1>What are ya doin!</h1>
+
+  <% end %> 

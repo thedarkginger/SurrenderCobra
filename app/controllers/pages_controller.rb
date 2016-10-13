@@ -11,6 +11,8 @@ class PagesController < ApplicationController
   end
 
   def admin
-  	@posts = Post.where(subdomain: current_user.website)
+    if user_signed_in?
+  	 @posts = Post.where(subdomain: current_user.website)
+    end
   end
 end
