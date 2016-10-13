@@ -12,7 +12,7 @@ class PagesController < ApplicationController
 
   def admin
     if user_signed_in?
-  	 @posts = Post.where(subdomain: current_user.website).order(published_at: :asc).limit(12)
+  	 @posts = Post.where(subdomain: current_user.website).order(published_at: :desc).limit(12)
     end
   end
 end
