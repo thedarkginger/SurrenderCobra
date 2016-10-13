@@ -1,5 +1,7 @@
 <div class="container">
 
+
+<div class="form-signin">
 	<h2>Create a New Writer Account</h2>
 
 	<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
@@ -18,7 +20,7 @@
 
 	 <div class="form-group">
 	  <div><%= f.label :website %><br />
-	  <%= f.select :website, ['FCSWatch.com', 'FearTheWave.com', 'SurrenderCobra.com'], class: "form-control" %></div>
+	  <%= f.select :website, ['FearTheWave.com', 'FCSWatch.com', 'SurrenderCobra.com'], class: "selectpicker" %></div>
 	 </div>
 
 	 <div class="form-group">
@@ -36,6 +38,7 @@
 
 	<%= render "devise/shared/links" %>
 
+</div>
 </div>
 
 
