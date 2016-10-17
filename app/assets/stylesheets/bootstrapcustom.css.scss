@@ -289,23 +289,6 @@
 	overflow: hidden;
 }
 
-
-/* h3 {
-	background-color: rgba(200,230,201, 0.8);
-	padding: 6px;
-	display: inline-block;
-	margin-top: 10px;
-}
-
-h3:hover {
-	background-color: rgba(129,199,132, 0.8);
-	padding: 6px;
-	display: inline-block;
-	margin-top: 10px;
-}
-*/ 
-
-
 .exampleToggle {
   position: absolute;
   margin-left: 4%;
@@ -540,3 +523,19 @@ blockquote {
     	border-radius: 8px;
     	border: #0191C8;
     }
+
+h3 {
+	background-color: rgba(200,230,201, 0.5);
+	padding: 6px;
+	display: inline-block;
+	margin-top: 10px;
+}
+
+
+h3:hover {
+	background-color: rgba(129,199,132, 0.8);
+	padding: 6px;
+	display: inline-block;
+	margin-top: 10px;
+}
+ 
