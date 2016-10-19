@@ -538,4 +538,31 @@ h3:hover {
 	padding: 6px;
 	display: inline-block;
 }
- 
+
+
+.tempbox {
+	height: 200px;
+	width: 90%;
+	background: blue;
+	margin-left: 5%;
+ }
+
+ .tempbox:hover {
+	background: red;
+ }
+
+.ftwhead {
+	height: 40px;
+	width: 17%;
+	background: black;
+	margin-left: 5%;
+ }
+
+#ftwheadtext {
+	color: white;
+	font-family: Arial;
+	padding-bottom: 4px;
+	padding-left: 8px;
+	font-size: 26px;
+	font-weight: bold;
+}
