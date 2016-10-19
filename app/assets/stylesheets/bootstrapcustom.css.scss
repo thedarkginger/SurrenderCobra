@@ -69,6 +69,12 @@
 	border-radius: 12px;
 	box-shadow: .5px .5px 1px;
 	}
+
+	#blogtitle {
+		font-size:35px;
+    	letter-spacing: .5px;
+    	text-align: center;
+	}
 }
 
 @media screen and (min-width: 442px) {
@@ -88,6 +94,11 @@
 	padding-bottom: 12px;
 	border-radius: 12px;
 	box-shadow: .5px .5px 1px;
+	}
+
+	#blogtitle {
+		font-size:55px;
+    	letter-spacing: .8px;
 	}
 }
 
@@ -473,8 +484,6 @@ div .exampleToggle:hover {
     h1,h2,h3,h4,h5,h6{font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif}
 
     h2 {
-    	font-size:55px;
-    	letter-spacing: .8px;
     	font-weight: bold;
     }
 

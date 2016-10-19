@@ -24,7 +24,7 @@
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<% @posts.each do |post| %>
-			    <h2><%= post.title %></h2>
+			    <h2 id="blogtitle"><%= post.title %></h2>
 			    <button class="btn btn-default">By <%= post.author %></button>
 			    <button class="btn btn-default"><%= post.category %></button>
 			    <hr class="star-light">
